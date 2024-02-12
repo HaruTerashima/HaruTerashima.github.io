@@ -21,6 +21,8 @@ body {
 @media screen and (max-width: 520px) {
   body {
     font-size: 1.4rem;
+    line-height: 1.5;
+
   }
 }
 body::before, body::after {
