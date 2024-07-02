@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Haru TerashimaWebサイトです">
- <meta name="keywords" content="Haru Terashima, 寺島青">
- <title>Haru Terashima official</title>
- <link rel="stylesheet" href="css/reset.css">
- <link rel="stylesheet" href="css/common.css">
- <link rel="stylesheet"
-  href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haruterashima</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
- <!-- メインコンテンツ -->
- <main class="mainwrapper">
-  <!-- プロフィール画像 -->
-  <div class="profile__img"><img src="prof.jpg" alt=""></div>
+    <header>
+        <div class="header-text">
+            <h1>Haru Terashima</h1>
+            <h2>Graduate School of Engineering</h2>
+            <h2>Nagoya University</h2>
+            <h2>Japan</h2>
+        </div>
+        <img src="prof.jpg" alt="Header Image" class="profile-pic">
+    </header>
+    
+    <div class="container">
+        <div class="column">
+            <section id="aboutme">
+                <h2>About Me</h2>
+                <div class="section-block">
+                    <p>Hello, my name is Haru Terashima, Graduate School of Engineering, Nagoya University, Japan.<br>
+                        My hobbies are running, darts, billiards and travel.</p>
+                </div>
+            </section>
+            <section id="biography">
+                <h2>Biography</h2>
+                <div class="section-block">
+                    <h3 class="headingM">Education</h3>
+                    <ul class="list">
+                        <li>
+                            <p>Department of Information and Communication Engineering<br>Graduate School of Engineering, Nagoya University (2024.04 - now)</p>
+                        </li>
+                        <li>
+                            <p>Department of Electrical, Electronics, and Information Engineering<br>School of Engineering, Nagoya University (2020.04 - 2024.03)</p>
+                        </li>
+                        <li>
+                            <p>Aichi Prefectual Meiwa High School (2017.04 - 2020.03)</p>
+                        </li>
+                    </ul>
+                    <h3 class="headingM">Experience</h3>
+                    <ul class="list">
+                        <li>
+                            <p>Graduate Program for Lifestyle Revolution based on Transdisciplinary Mobility Innovation (TMI)<br>Institutes of Innovation for Future Society, Nagoya University (2024.05 - now)</p>
+                        </li>
+                    </ul>
+                    <h3 class="headingM">Activities</h3>
+                    <ul class="list">
+                        <li>
+                            <p>Asian Student Symposium on Emerging Technologies(ASSET) sponsored by ACM SIGMBILE (2024.6)</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+        <div class="column">
+            <section id="publications">
+                <h2>Publications</h2>
+                <div class="section-block">
+                    <h3 class="headingM">International Conference</h3>
+                    <ul class="list">
+                        <li>
+                            <p><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa and Nobuo Kawaguchi.<br>
+                            "Human Mobility Prediction Challenge: Next Location Prediction using Spatiotemporal BERT", ACM SIGSPATIAL HuMob Challenge Workshop, 2023</p>
+                        </li>
+                    </ul>
+                    <h3 class="headingM">Domestic Conference</h3>
+                    <ul class="list">
+                        <li>
+                            <p><strong>寺島青</strong>, 田村直樹, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫.<br>
+                            "滞在時間を考慮に入れた効率的なNext Stay予測手法", DICOMOシンポジウム, 2024</p>
+                        </li>
+                        <li>
+                            <p><strong>寺島青</strong>, 田村直樹, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫.<br>
+                            "BERTに基づく都市における移動エリア予測手法の提案", 第111回 IPSJ SIG-MBL研究会, 2024</p>
+                        </li>
+                    </ul>
+                    <h3 class="headingM">Poster/Demo</h3>
+                    <ul class="list">
+                        <li>
+                            <p><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa and Nobuo Kawaguchi.<br>
+                            "An Efficient Method of Next Location Prediction using Spatio-Temporal BERT"(no paper), ACM MobiSys ASSET, 2024</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="awards">
+                <h2>Awards</h2>
+                <div class="section-block">
+                    <h3 class="headingM">Research</h3>
+                    <ul class="list">
+                        <li>
+                            <p>優秀プレゼンテーション賞, DICOMOシンポジウム, 2024.6</p>
+                        </li>
+                    </ul>
+                    <h3 class="headingM">Competition</h3>
+                    <ul class="list">
+                        <li>
+                            <p>Human Mobility Prediction Challenge 2023<br>
+                            <strong>Grand Winner</strong>, uclab2023(<strong>Haru Terashima</strong>、 Naoki Tamura, Kazuyuki Shoji), 2023.11</p>
+                        </li>
+                        <li>
+                            <p>Japan Automotive AI Challenge 2023 Integration<br>
+                            第3位, UCLab_challengers (<strong>寺島青</strong>, 鈴木優真, 下里浩昇), 2023.11</p>
+                        </li>
+                        <li>
+                            <p>Japan Automotive AI Challenge 2023 For Rookie<br>
+                            第2位, <strong>寺島青</strong>, 2023.8</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; E-mail haru@ucl.nuee.nagoya-u.ac.jp</p>
+    </footer>
+</body>
+</html>
 
-  <!-- 名前 -->
-  <h1 class="myname">Haru Terashima
-   <div>Kawaguchi Lab</div>
-  </h1>
 
-  <!-- セクション１ -->
-  <section class="box">
-   <h2 class="headingL box__title">About me</h2>
-   <p>Hello, my name is Haru Terashima, Graduate School of Engineering, Nagoya University, Japan.<br>
-      My hobbies are running, darts, billiards and travel.
-   </p>
-  </section>
-  <!-- セクション１ここまで -->
 
-  <!-- セクション２ -->
-  <section class="box">
-   <h2 class="headingL box__title">Biography</h2>
-   <h3 class="headingM">Education</h3>
-   <ul class="list">
-    <li>
-     <p>Department of Information and Communication Engineering<br>Graduate School of Engineering, Nagoya University (2024.04 - now)</p>
-    </li>
-    <li>
-     <p>Department of Electrical, Electronics, and Information Engineering<br>School of Engineering, Nagoya University (2020.04 - 2024.03)</p>
-    </li>
-    <li>
-     <p>Aichi Prefectual Meiwa High School (2017.04 - 2020.03)</p>
-    </li>
-   </ul>
-  <h3 class="headingM">Experience</h3>
-  <ul class="list">
-    <li>
-      <p>Graduate Program for Lifestyle Revolution based on Transdisciplinary Mobility Innovation (TMI)<br>Institutes of Innovation for Future Society, Nagoya University (2024.05 - now)</p>
-    </li>
-  </ul>
-  </section>
-  <!-- セクション２ここまで -->
-
-  <!-- セクショ 3 -->
-  <section class="box">
-    <h2 class="headingL box__title">Publication</h2>
-    <h3 class="headingM">International Conference</h3>
-    <ul class="list">
-      <li>
-        <p><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa and Nobuo Kawaguchi.<br>
-           "Human Mobility Prediction Challenge: Next Location Prediction using Spatiotemporal BERT", ACM SIGSPATIAL HuMob Challenge Workshop, 2023</p>
-      </li>
-    </ul>
-    <h3 class="headingM">Domestic Conference</h3>
-    <ul class="list">
-      <li>
-        <p><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa and Nobuo Kawaguchi.<br>
-           "NSP-BERT: An Efficient Method for Next Stay Prediction Considering Duration Time"(Japanese paper), DICOMO Symposium, 2024</p>
-      </li>
-      <li>
-        <p><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa and Nobuo Kawaguchi.<br>
-           "Proposing a BERT-Based Method of Next Location Prediction for Area Mobility in Urban Environments"(Japanese paper), 111th IPSJ SIG-MBL, 2024</p>
-      </li>
-    </ul>
-    <h3 class="headingM">Poster/Domo</h3>
-    <ul class="list">
-      <li>
-        <p><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa and Nobuo Kawaguchi.<br>
-           "An Efficient Method of Next Location Prediction using Spatio-Temporal BERT"(no paper), ACM MobiSys ASSET, 2024</p>
-      </li>
-    </ul>
-  </section>
-  <!-- セクショ 3ここまで -->
-
-  <!-- セクショ 4 -->
-  <section class="box">
-    <h2 class="headingL box__title">Awards</h2>
-    <h3 class="headingM">Competition</h3>
-    <ul class="list">
-      <li>
-        <p>Human Mobility Prediction Challenge 2023<br>
-          <strong>Grand Winner</strong>, uclab2023(<strong>Haru Terashima</strong>、 Naoki Tamura, Kazuyuki Shoji), 2023.11
-        </p>
-      </li>
-      <li>
-        <p>Japan Automotive AI Challenge 2023 Integration<br>
-            3rd place, UCLab_challengers (<strong>Haru Terashima</strong>, Yuma Suzuki, Hironori Shimosato), 2023.11
-        </p>
-      </li>
-      <li>
-        <p>Japan Automotive AI Challenge 2023 For Rookie<br>
-            2nd place, <strong>Haru Terashima</strong>, 2023.8
-        </p>
-      </li>
-    </ul>
-  </section>
-  <!-- セクショ 4ここまで -->
-
-  <!-- セクショ 4 -->
-  <section class="box">
-    <h2 class="headingL box__title">Contact</h2>
-      <p class="center">haru@ucl.nuee.nagoya-u.ac.jp</p>
-  </section>
-  <!-- セクショ 4ここまで -->
-
-  
