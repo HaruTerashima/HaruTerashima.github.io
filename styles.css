@@ -9,7 +9,6 @@ body {
 header {
     background-color: #333;
     color: white;
-    /* padding: 10em; */
     text-align: center;
     position: relative;
     font-size: 28px;
@@ -18,6 +17,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    width: 100%;
 }
 
 .header-text {
@@ -32,23 +32,28 @@ header h1 {
 header h2 {
     margin: 0;
     padding: 0;
-    font-size: 24px; /* h2の文字サイズを小さく */
+    font-size: 36px; /* h2の文字サイズを小さく */
+}
+
+header h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px; /* h4の文字サイズを小さく */
 }
 
 header img.profile-pic {
-    width: 300x;
-    height: 300px;
+    width: 300px; /* 写真の幅を修正 */
+    height: 300px; /* 写真の高さを修正 */
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 80px;
     transform: translateY(-50%);
-    
 }
 
 .container {
     display: flex;
-    max-width: 3000px;
+    width: 100%;
     margin: 0 auto;
     padding: 1em;
 }
@@ -58,15 +63,16 @@ header img.profile-pic {
     padding: 1em;
     background-color: white;
     margin: 0.5em;
-    min-width: 300px; /* 各カラムの最小幅を指定 */
+    min-width: 200px; /* 各カラムの最小幅を指定 */
 }
 
 .section-block {
     padding: 1em;
     margin-bottom: 2em;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
+    font-size: 14px;
 }
 
 section h2 {
@@ -83,7 +89,9 @@ footer {
     background-color: #333;
     color: white;
     font-size: 18px; /* フッターの文字サイズを大きく */
+    width: 100%;
 }
+
 
 
 
