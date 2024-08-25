@@ -1,97 +1,139 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
     text-align: center;
     position: relative;
-    font-size: 28px;
-    height: 250px;
+}
+
+.header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
-    width: 100%;
+    flex-direction: column;
 }
 
-.header-text {
-    flex: 1;
-}
-
-header h1 {
+.header-text h1 {
     margin: 0;
-    padding: 0;
+    font-size: 2.5em;
+    color: #333;
 }
 
-header h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 36px; /* h2の文字サイズを小さく */
+.header-text h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #777;
 }
 
-header h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 20px; /* h4の文字サイズを小さく */
+.header-text h4 {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
 }
 
-header img.profile-pic {
-    width: 300px; /* 写真の幅を修正 */
-    height: 300px; /* 写真の高さを修正 */
-    border-radius: 50%;
+.header-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header-image {
+    width: 33%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 400px;
+}
+
+nav {
     position: absolute;
-    top: 50%;
-    right: 80px;
-    transform: translateY(-50%);
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 .container {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1em;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.column {
-    flex: 1;
-    padding: 1em;
-    background-color: white;
-    margin: 0.5em;
-    min-width: 200px; /* 各カラムの最小幅を指定 */
-}
-
-.section-block {
-    padding: 1em;
-    margin-bottom: 2em;
+.content section {
+    margin-bottom: 40px;
+    padding: 20px;
     border: 2px solid #ccc;
     border-radius: 10px;
-    background-color: #fff;
-    font-size: 14px;
+    background-color: #f9f9f9;
 }
 
-section h2 {
-    margin-bottom: 0.5em;
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
 }
 
-section {
-    margin-bottom: 2em;
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.aboutme-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    font-size: 18px; /* フッターの文字サイズを大きく */
-    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ccc;
 }
 
-
-
-
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #777;
+}
