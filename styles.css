@@ -19,6 +19,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .header-text h1 {
@@ -43,14 +44,14 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    width: 40%;  /* 画像全体が画面幅に適応する */
 }
 
 .header-image {
-    width: 33%;
-    height: auto;
+    width: 40%;  /* 画像が画面の幅に応じて自動的にリサイズされる */
+    height: auto;  /* 高さは自動調整 */
     border-radius: 10px;
     margin: 0 10px;
-    width: 400px;
 }
 
 nav {
