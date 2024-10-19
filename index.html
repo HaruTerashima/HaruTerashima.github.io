@@ -9,53 +9,88 @@
 <body>
     <header>
         <div class="header-content">
-            <!-- <div class="header-text">
-                <h1>Haru Terashima</h1>
-                <h2>~ Kawaguchi Lab ~</h2>
-                <h4>Nagoya University</h4>
-                <h4>Japan</h4>
-            </div> -->
             <div class="header-images">
                 <img src="header2.JPG" alt="Header Image 2" class="header-image">
                 <img src="header1.JPG" alt="Header Image 1" class="header-image">
                 <img src="header3.JPG" alt="Header Image 3" class="header-image">
             </div>
         </div>
-        <nav>
+        <!-- <nav>
             <ul>
-                <li><a href="publications_awards.html">Publications & Awards</a></li>
-            </ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#publication">Publications</a></li>
+                <li><a href="#award">Awards</a></li>
+            </ul> -->
         </nav>
     </header>
     
     <div class="container">
-        <div class="content">
-            <section id="aboutme">
-                <h2>About Me</h2>
-                <div class="aboutme-content">
-                    <p>Hello, my name is Haru Terashima, Graduate School of Engineering, Nagoya University, Japan.<br>
-                    My hobbies are running, darts, billiards, and travel.</p>
-                    <img src="prof.jpg" alt="Profile Picture" class="profile-pic">
-                </div>
-            </section>
-            <section id="biography">
-                <h2>Biography</h2>
-                <h3>Education</h3>
+        <!-- Main Section -->
+        <section id="main" class="content">
+            <h2>About Me</h2>
+            <div class="aboutme-content">
+                <p>Hello, my name is Haru Terashima, Graduate School of Engineering, Nagoya University, Japan.<br>
+                My hobbies are running, darts, billiards, and travel.</p>
+                <img src="prof.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <h2>Biography</h2>
+            <h3>Education</h3>
+            <ul>
+                <li>Department of Information and Communication Engineering<br>Graduate School of Engineering, Nagoya University (2024.04 - now)</li>
+                <li>Department of Electrical, Electronics, and Information Engineering<br>School of Engineering, Nagoya University (2020.04 - 2024.03)</li>
+                <li>Aichi Prefectual Meiwa High School (2017.04 - 2020.03)</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul>
+                <li>Graduate Program for Lifestyle Revolution based on Transdisciplinary Mobility Innovation (TMI)<br>Institutes of Innovation for Future Society, Nagoya University (2024.05 - now)</li>
+            </ul>
+            <h3>Activities</h3>
+            <ul>
+                <li>Asian Student Symposium on Emerging Technologies (ASSET) sponsored by ACM SIGMBILE (2024.6)</li>
+            </ul>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publication" class="content">
+            <h2>Publications</h2>
+            <h3>International Conference</h3>
                 <ul>
-                    <li>Department of Information and Communication Engineering<br>Graduate School of Engineering, Nagoya University (2024.04 - now)</li>
-                    <li>Department of Electrical, Electronics, and Information Engineering<br>School of Engineering, Nagoya University (2020.04 - 2024.03)</li>
-                    <li>Aichi Prefectual Meiwa High School (2017.04 - 2020.03)</li>
+                    <li><strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa, and Nobuo Kawaguchi.<br>
+                    "Human Mobility Prediction Challenge: Next Location Prediction using Spatiotemporal BERT", ACM SIGSPATIAL HuMob Challenge Workshop, 2023</li>
                 </ul>
-                <h3>Experience</h3>
+            <h3>Domestic Conference</h3>
                 <ul>
-                    <li>Graduate Program for Lifestyle Revolution based on Transdisciplinary Mobility Innovation (TMI)<br>Institutes of Innovation for Future Society, Nagoya University (2024.05 - now)</li>
+                    <li>庄子和之, <strong>寺島青</strong>, 田村直樹, 片山晋, 浦野健太, 米澤拓郎, 河口信夫.<br>
+                    "DiverCityMeter: 大規模移動データによる生活パターン分析を通じた都市空間の多様性算出手法", 第112回 IPSJ SIG-MBL研究会, 2024</li>
+                    <li><strong>寺島青</strong>, 田村直樹, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫.<br>
+                    "NSP-BERT: 滞在時間を考慮に入れた効率的なNext Stay予測手法", DICOMOシンポジウム, 2024</br>
+                    <strong>優秀プレゼンテーション賞</strong></li>
+                    <li><strong>寺島青</strong>, 田村直樹, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫.<br>
+                    "BERTに基づく都市における移動エリア予測手法の提案", 第111回 IPSJ SIG-MBL研究会, 2024</br>
+                    <strong>奨励発表賞</strong></li>
                 </ul>
-                <h3>Activities</h3>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="award" class="content">
+            <h2>Awards</h2>
+            <h3>Research</h3>
                 <ul>
-                    <li>Asian Student Symposium on Emerging Technologies (ASSET) sponsored by ACM SIGMBILE (2024.6)</li>
+                    <li>優秀プレゼンテーション賞, DICOMOシンポジウム, 2024.6
+                    <li>奨励発表賞, 第111回 IPSJ SIG-MBL研究会, 2024.5
                 </ul>
-            </section>
-        </div>
+            <h3>Competition</h3>
+                <ul>
+                    <li>Human Mobility Prediction Challenge 2023<br><strong>Grand Winner</strong>, uclab2023 (<strong>Haru Terashima</strong>, Naoki Tamura, Kazuyuki Shoji), 2023.11</li>
+                    <li>Japan Automotive AI Challenge 2023 Integration<br>第3位, UCLab_challengers (<strong>寺島青</strong>, 鈴木優真, 下里浩昇), 2023.11</li>
+                    <li>Japan Automotive AI Challenge 2023 For Rookie<br>第2位, <strong>寺島青</strong>, 2023.8</li>
+                </ul>
+        </section>
+    </div>
+    <div class="award-images" style="display: flex; justify-content: center; margin-top: 20px; width: 100%;">
+        <img src="humob2023.png" alt="Header Image 2" class="award-image" style="width: 10%; height: auto;">
+        <img src="mbl.png" alt="Header Image 1" class="award-image" style="width: 10%; height: auto;">
+        <img src="dicomo.png" alt="Header Image 3" class="award-image" style="width: 10%; height: auto;">
     </div>
     
     <footer>
@@ -63,6 +98,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

@@ -44,7 +44,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    width: 40%;  /* 画像全体が画面幅に適応する */
+    width: 30%;  /* 画像全体が画面幅に適応する */
 }
 
 .header-image {
@@ -53,6 +53,20 @@ header {
     border-radius: 10px;
     margin: 0 10px;
 }
+
+.award-images {
+    display: flex;
+    justify-content: center; /* 画像を中央揃え */
+    margin-top: 20px;
+    width: 100%; /* コンテナの幅を全体に広げる */
+}
+
+.award-image {
+    width: 30%;  /* 各画像が画面幅の30%に適応する */
+    height: auto;  /* 高さは自動調整 */
+    /* border-radius: 100px; */
+}
+
 
 nav {
     position: absolute;
