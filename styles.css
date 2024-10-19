@@ -44,7 +44,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    width: 20%;  /* 画像全体が画面幅に適応する */
+    width: 30%;  /* 画像全体が画面幅に適応する */
 }
 
 .header-image {
