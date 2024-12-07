@@ -61,6 +61,10 @@ header {
     width: 100%; /* コンテナの幅を全体に広げる */
 }
 
+.award-highlight {
+    color: red;
+}
+
 .award-image {
     width: 30%;  /* 各画像が画面幅の30%に適応する */
     height: auto;  /* 高さは自動調整 */
