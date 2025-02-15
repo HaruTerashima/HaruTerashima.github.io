@@ -69,10 +69,37 @@ header {
     color: red;
 }
 
+.award-images {
+    display: flex;
+    flex-wrap: wrap; /* 折り返し可能に */
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* 画像間の余白 */
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
 .award-image {
-    width: 30%;  /* 各画像が画面幅の30%に適応する */
-    height: auto;  /* 高さは自動調整 */
-    /* border-radius: 100px; */
+    width: 20%;
+    max-width: 300px; /* 画像が大きくなりすぎないように制限 */
+    height: auto;
+    object-fit: contain;
+}
+
+/* スマホ・タブレット対応 */
+@media (max-width: 768px) {
+    .award-image {
+        width: 20%;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .award-image {
+        width: 30%;
+        max-width: 80px;
+    }
 }
 
 
