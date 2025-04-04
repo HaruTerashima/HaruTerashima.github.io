@@ -54,21 +54,7 @@ header {
     margin: 0 10px;
 }
 
-.award-images {
-    display: flex;
-    justify-content: center; /* 画像を中央揃え */
-    margin-top: 20px;
-    width: 100%; /* コンテナの幅を全体に広げる */
-}
-
-.paper-highlight {
-    color: black;
-}
-
-.award-highlight {
-    color: red;
-}
-
+/* Award Images Section */
 .award-images {
     display: flex;
     flex-wrap: wrap; /* 折り返し可能に */
@@ -87,9 +73,37 @@ header {
     object-fit: contain;
 }
 
+/* Memorial Images Section */
+.memorial-images {
+    display: flex;
+    flex-wrap: wrap; /* 折り返し可能に */
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* 画像間の余白 */
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.memorial-image {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.paper-highlight {
+    color: black;
+}
+
+.award-highlight {
+    color: red;
+}
+
+
 /* スマホ・タブレット対応 */
 @media (max-width: 768px) {
-    .award-image {
+    .award-image, .memorial-images {
         width: 20%;
         max-width: 100px;
     }
