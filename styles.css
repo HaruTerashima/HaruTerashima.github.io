@@ -110,7 +110,7 @@ header {
 }
 
 @media (max-width: 480px) {
-    .award-image {
+    .award-image, .memorial-images {
         width: 30%;
         max-width: 80px;
     }
