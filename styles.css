@@ -101,6 +101,7 @@ header {
 }
 
 
+
 /* スマホ・タブレット対応 */
 @media (max-width: 768px) {
     .award-image, .memorial-images {
