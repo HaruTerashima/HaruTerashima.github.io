@@ -1,3 +1,13 @@
+/* 画像全体ブロック枠 */
+.images-block {
+    border: 2px solid #bbb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 10px 16px;
+    margin: 32px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    max-width: 1200px;
+}
 /* 画像セクション全体の枠 */
 .images-section {
     border: 2px solid #bbb;
