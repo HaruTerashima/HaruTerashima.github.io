@@ -10,13 +10,14 @@
 }
 /* 画像セクション全体の枠 */
 .images-section {
-    border: 2px solid #bbb;
-    border-radius: 12px;
-    background: #fff;
-    padding: 10px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
     margin: 32px auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    max-width: 1200px;
+    background: #fff;
+    transition: box-shadow 0.3s;
+    max-width: 1300px;
 }
 .images-section h2 {
     margin-top: 0;
@@ -72,6 +73,8 @@
 .paper-list {
     display: block;
     margin: 24px 0;
+    width: auto;
+    box-sizing: border-box;
 }
 
 .paper-card {
@@ -81,7 +84,9 @@
     box-shadow: 0 4px 16px rgba(34,34,34,0.10);
     padding: 10px 24px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     margin: 0 0 10px 0;
     display: flex;
     flex-direction: column;
@@ -261,17 +266,20 @@ header {
 
 
 /* スマホ・タブレット対応 */
+
 @media (max-width: 768px) {
-    .award-image, .memorial-images {
-        width: 20%;
-        max-width: 100px;
+    .award-image, .memorial-image {
+        max-width: 140px;
+        min-width: 100px;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .award-image, .memorial-images {
-        width: 30%;
-        max-width: 80px;
+    .award-image, .memorial-image {
+        max-width: 100px;
+        min-width: 80px;
+        width: 100%;
     }
 }
 
