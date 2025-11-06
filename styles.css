@@ -17,7 +17,7 @@
     margin: 32px auto;
     background: #fff;
     transition: box-shadow 0.3s;
-    max-width: 1400px;
+    max-width: 1300px;
 }
 .images-section h2 {
     margin-top: 0;
@@ -29,27 +29,23 @@
 /* 写真グリッド・カード風デザイン */
 .memorial-images, .award-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     justify-items: center;
     align-items: center;
     margin: 32px 0 24px 0;
 }
 .memorial-image, .award-image {
     width: 100%;
-    max-width: 260px;
+    max-width: 320px;
     aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     border: 2px solid #eee;
     background: #fff;
+    padding: 0;
     transition: box-shadow 0.2s, transform 0.2s;
-}
-.memorial-image:hover, .award-image:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
-    transform: scale(1.04);
-    border-color: #bbb;
 }
 /* Awards内の各ブロック枠 */
 .award-block {
@@ -98,18 +94,18 @@
     border-color: #3576e6;
 }
 .paper-authors {
-    font-size: 0.85em;
+    font-size: 0.8em;
     color: #555;
     margin-bottom: 6px;
 }
 .paper-title {
     font-weight: bold;
-    font-size: 1.08em;
+    font-size: 1em;
     margin-bottom: 10px;
     color: #222;
 }
 .paper-meta {
-    font-size: 0.85em;
+    font-size: 0.75em;
     color: #666;
 }
 .paper-link-btn {
@@ -221,42 +217,202 @@ header {
     margin: 0 10px;
 }
 
-/* Award Images Section */
-.award-images {
-    display: flex;
-    flex-wrap: wrap; /* 折り返し可能に */
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* 画像間の余白 */
-    margin-top: 20px;
+/* Awards内の各ブロック枠 */
+.award-block {
+    border: 2px solid #bbb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+/* Biography内の各要素ブロック枠 */
+.bio-block {
+    border: 2px solid #bbb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+/* 論文リストのカードデザイン */
+.paper-list {
+    display: block;
+    margin: 24px 0;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.paper-card {
+    background: #fff;
+    border: 1.5px solid #222;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(34,34,34,0.10);
+    padding: 10px 24px;
     width: 100%;
-    padding: 10px;
-}
-
-.award-image {
-    width: 20%;
-    max-width: 300px; /* 画像が大きくなりすぎないように制限 */
-    height: auto;
-    object-fit: contain;
-}
-
-/* Memorial Images Section */
-.memorial-images {
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
     display: flex;
-    flex-wrap: wrap; /* 折り返し可能に */
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* 画像間の余白 */
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.paper-card:hover {
+    box-shadow: 0 8px 32px rgba(79,140,255,0.18);
+    border-color: #3576e6;
+}
+.paper-authors {
+    font-size: 0.8em;
+    color: #555;
+    margin-bottom: 6px;
+}
+.paper-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #222;
+}
+.paper-meta {
+    font-size: 0.75em;
+    color: #666;
+}
+.paper-link-btn {
+    display: inline-block;
+    background: linear-gradient(90deg,#4f8cff 0%,#6ad1ff 100%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.85em;
+    padding: 2px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(79,140,255,0.10);
+    margin-top: 2px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.paper-link-btn:hover {
+    background: linear-gradient(90deg,#3576e6 0%,#4fd1ff 100%);
+    box-shadow: 0 2px 8px rgba(79,140,255,0.18);
 }
 
-.memorial-image {
-    width: 30%;
-    max-width: 300px;
-    height: auto;
+/* Grand Winner等の小ボタン */
+.paper-award-btn {
+    display: inline-block;
+    background: linear-gradient(90deg,#ffb347 0%,#ffcc80 100%);
+    color: #7a4c00;
+    font-weight: 500;
+    font-size: 0.85em;
+    padding: 2px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(255,179,71,0.10);
+    margin-top: 2px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.paper-award-btn:hover {
+    background: linear-gradient(90deg,#ffa500 0%,#ffd580 100%);
+    box-shadow: 0 2px 8px rgba(255,179,71,0.18);
+}
+/* セクション外枠デザイン */
+.section-block {
+    border: 2px solid #e0e0e0;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+    margin: 32px 0;
+    background: #fff;
+    transition: box-shadow 0.3s;
+}
+.section-block:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.header-text h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #777;
+}
+
+.header-text h4 {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.header-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 30%;  /* 画像全体が画面幅に適応する */
+}
+
+.header-image {
+    width: 40%;  /* 画像が画面の幅に応じて自動的にリサイズされる */
+    height: auto;  /* 高さは自動調整 */
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.award-images, .memorial-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    justify-items: center;
+    align-items: center;
+    margin: 32px 0 24px 0;
+}
+
+.award-image, .memorial-image {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 4/3;
     object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border: 2px solid #eee;
+    background: #fff;
+    padding: 0;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.award-image:hover, .memorial_image:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+    transform: scale(1.04);
+    border-color: #bbb;
 }
 
 .paper-highlight {
@@ -287,6 +443,17 @@ header {
     }
 }
 
+@media (max-width: 900px) {
+  .memorial-images, .award-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .memorial-images, .award-images {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 nav {
     position: absolute;
@@ -311,7 +478,7 @@ nav ul li a {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 20px auto;
     padding: 0 20px;
 }
@@ -382,4 +549,51 @@ footer p {
     margin: 0;
     font-size: 0.9em;
     color: #777;
+}
+
+.highlight-block {
+    border: 2px solid #e0e0e0;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+    margin: 32px 0;
+    background: #fff;
+    transition: box-shadow 0.3s;
+    max-width: 1300px;
+    text-align: left;
+}
+.highlight-block h2 {
+    color: #333;
+    margin-bottom: 18px;
+}
+.highlight-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.highlight-images img {
+    max-width: 300px;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255,179,71,0.10);
+    border: 2px solid silver;
+    background: #fff;
+}
+.highlight-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 12px;
+}
+.highlight-figure img {
+    display: block;
+}
+.highlight-figure figcaption {
+    font-size: 0.92em;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
 }
