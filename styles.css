@@ -5,17 +5,18 @@
     background: #fff;
     padding: 10px 16px;
     margin: 32px auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.06); */
+    box-shadow: none;
     max-width: 1200px;
 }
-/* 画像セクション全体の枠 */
+/* Image */
 .images-section {
-    border: 2px solid #e0e0e0;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-    padding: 32px 24px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 8px 0 0;
     margin: 32px auto;
-    background: #fff;
+    background: none;
     transition: box-shadow 0.3s;
     max-width: 1300px;
 }
@@ -49,22 +50,15 @@
 }
 /* Awards内の各ブロック枠 */
 .award-block {
-    border: 2px solid #bbb;
-    border-radius: 12px;
+    border: 1px solid #e2e7f0;
+    border-left: 4px solid #5a8dee;
+    border-radius: 10px;
     background: #fff;
-    padding: 10px 16px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 14px 16px 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 16px rgba(28,52,123,0.06);
 }
 /* Biography内の各要素ブロック枠 */
-.bio-block {
-    border: 2px solid #bbb;
-    border-radius: 12px;
-    background: #fff;
-    padding: 10px 16px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
 /* 論文リストのカードデザイン */
 .paper-list {
     display: block;
@@ -75,10 +69,10 @@
 
 .paper-card {
     background: #fff;
-    border: 1.5px solid #222;
-    border-radius: 14px;
-    box-shadow: 0 4px 16px rgba(34,34,34,0.10);
-    padding: 10px 24px;
+    border: 1px solid #e2e7f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(28,52,123,0.04);
+    padding: 14px 18px;
     width: 100%;
     max-width: 100%;
     min-width: 0;
@@ -87,45 +81,52 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: box-shadow 0.2s, border-color 0.2s;
+    gap: 4px;
+    line-height: 1.2;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
 }
 .paper-card:hover {
-    box-shadow: 0 8px 32px rgba(79,140,255,0.18);
-    border-color: #3576e6;
+    border-color: #c4d2e9;
+    box-shadow: 0 6px 18px rgba(28,52,123,0.08);
+    transform: translateY(-1px);
 }
 .paper-authors {
     font-size: 0.8em;
     color: #555;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+    line-height: 1.35;
 }
 .paper-title {
     font-weight: bold;
     font-size: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     color: #222;
+    line-height: 1.35;
 }
 .paper-meta {
     font-size: 0.75em;
     color: #666;
+    line-height: 1.1;
 }
 .paper-link-btn {
     display: inline-block;
-    background: linear-gradient(90deg,#4f8cff 0%,#6ad1ff 100%);
+    background: #444;
     color: #fff;
     font-weight: 500;
     font-size: 0.85em;
     padding: 2px 10px;
     border-radius: 12px;
     text-decoration: none;
-    box-shadow: 0 1px 4px rgba(79,140,255,0.10);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.16);
     margin-top: 2px;
     margin-right: 8px;
     margin-bottom: 2px;
-    transition: background 0.2s, box-shadow 0.2s;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
 }
 .paper-link-btn:hover {
-    background: linear-gradient(90deg,#3576e6 0%,#4fd1ff 100%);
-    box-shadow: 0 2px 8px rgba(79,140,255,0.18);
+    background: #2b2b2b;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22);
+    transform: translateY(-1px);
 }
 
 /* Grand Winner等の小ボタン */
@@ -150,23 +151,23 @@
 }
 /* セクション外枠デザイン */
 .section-block {
-    border: 2px solid #e0e0e0;
+    border: none;
     border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     padding: 32px 24px;
     margin: 32px 0;
     background: #fff;
     transition: box-shadow 0.3s;
 }
 .section-block:hover {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 header {
@@ -228,12 +229,23 @@ header {
 }
 /* Biography内の各要素ブロック枠 */
 .bio-block {
-    border: 2px solid #bbb;
+    position: relative;
+    border: 1.5px solid #d9deea;
     border-radius: 12px;
-    background: #fff;
-    padding: 10px 16px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
+    padding: 24px 20px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 12px 28px rgba(28,52,123,0.08);
+    overflow: hidden;
+}
+.bio-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg,#4f8cff,#6ad1ff,#ffb347);
 }
 /* 論文リストのカードデザイン */
 .paper-list {
@@ -280,7 +292,7 @@ header {
 }
 .paper-link-btn {
     display: inline-block;
-    background: linear-gradient(90deg,#4f8cff 0%,#6ad1ff 100%);
+    background: linear-gradient(90deg,#071f49 0%,#166886 100%);
     color: #fff;
     font-weight: 500;
     font-size: 0.85em;
@@ -289,12 +301,12 @@ header {
     text-decoration: none;
     box-shadow: 0 1px 4px rgba(79,140,255,0.10);
     margin-top: 2px;
-    margin-right: 8px;
+    margin-right: 6px;
     margin-bottom: 2px;
     transition: background 0.2s, box-shadow 0.2s;
 }
 .paper-link-btn:hover {
-    background: linear-gradient(90deg,#3576e6 0%,#4fd1ff 100%);
+    background: linear-gradient(90deg,#071f49 0%,#166886 100%);
     box-shadow: 0 2px 8px rgba(79,140,255,0.18);
 }
 
@@ -320,23 +332,24 @@ header {
 }
 /* セクション外枠デザイン */
 .section-block {
-    border: 2px solid #e0e0e0;
+    border: none;
     border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    box-shadow: none;
     padding: 32px 24px;
     margin: 32px 0;
     background: #fff;
     transition: box-shadow 0.3s;
 }
 .section-block:hover {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    box-shadow: none;
 }
+
 body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 header {
@@ -499,7 +512,7 @@ nav ul li a {
 .content section {
     margin-bottom: 40px;
     padding: 20px;
-    border: 2px solid #ccc;
+    border: none;
     border-radius: 10px;
     background-color: #f9f9f9;
 }
@@ -548,7 +561,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 footer {
@@ -565,13 +578,9 @@ footer p {
 }
 
 .highlight-block {
-    border: 2px solid #e0e0e0;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-    padding: 32px 24px;
+    padding: 8px 0 0;
     margin: 32px 0;
-    background: #fff;
-    transition: box-shadow 0.3s;
+    background: none;
     max-width: 1300px;
     text-align: left;
 }
@@ -583,26 +592,33 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
-}
-.highlight-images img {
-    max-width: 300px;
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(255,179,71,0.10);
-    border: 2px solid silver;
-    background: #fff;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .highlight-figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 12px;
+    margin: 0;
+    padding: 14px 14px 12px;
+    border-radius: 14px;
+    border: 1.5px solid #dfe6f4;
+    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
+    box-shadow: 0 12px 28px rgba(28,52,123,0.08);
+    position: relative;
+    overflow: hidden;
+    min-width: 240px;
+    max-width: 320px;
 }
 .highlight-figure img {
     display: block;
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1.5px solid #e6ebf5;
+    box-shadow: 0 6px 16px rgba(28,52,123,0.10);
 }
 .highlight-figure figcaption {
     font-size: 0.92em;
