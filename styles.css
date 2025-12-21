@@ -590,19 +590,22 @@ ul li {
 
 .scholar-link {
     display: inline-block;
-    margin-top: 8px;
-    padding: 6px 10px;
-    border: 1px solid #3b4965;
-    border-radius: 12px;
-    background: #ededee;
-    color: #333;
+    margin-top: 10px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid #d8deea;
+    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
+    color: #1f2a44;
+    font-weight: 600;
+    letter-spacing: 0.01em;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+    box-shadow: 0 10px 22px rgba(28,52,123,0.12);
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s, color 0.2s;
 }
 .scholar-link:hover {
-    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
-    border-color: #cfd3da;
+    box-shadow: 0 14px 28px rgba(28,52,123,0.16);
+    border-color: #c6cfe0;
+    color: #183164;
     transform: translateY(-1px);
 }
 
