@@ -588,6 +588,24 @@ ul li {
     margin-bottom: 6px;
 }
 
+.scholar-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 10px;
+    border: 1px solid #3b4965;
+    border-radius: 12px;
+    background: #ededee;
+    color: #333;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+}
+.scholar-link:hover {
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+    border-color: #cfd3da;
+    transform: translateY(-1px);
+}
+
 footer {
     text-align: center;
     padding: 20px;
