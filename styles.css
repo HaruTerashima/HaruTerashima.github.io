@@ -1,707 +1,580 @@
-/* 画像全体ブロック枠 */
-.images-block {
-    border: 2px solid #bbb;
-    border-radius: 12px;
-    background: #fff;
-    padding: 10px 16px;
-    margin: 32px auto;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.06); */
-    box-shadow: none;
-    max-width: 1200px;
-}
-/* Image */
-.images-section {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 8px 0 0;
-    margin: 32px auto;
-    background: none;
-    transition: box-shadow 0.3s;
-    max-width: 1300px;
-}
-.images-section h2 {
-    margin-top: 0;
-    margin-bottom: 18px;
-    font-size: 1.5em;
-    color: #333;
-    text-align: left;
-}
-/* 写真グリッド・カード風デザイン */
-.memorial-images, .award-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    justify-items: center;
-    align-items: center;
-    margin: 32px 0 24px 0;
-}
-.memorial-image, .award-image {
-    width: 100%;
-    max-width: 320px;
-    aspect-ratio: 4/3;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    border: 2px solid #eee;
-    background: #fff;
-    padding: 0;
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-/* Awards内の各ブロック枠 */
-.award-block {
-    position: relative;
-    border: 1px solid #dfe6f4;
-    border-radius: 12px;
-    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
-    padding: 18px 18px 16px;
-    margin-bottom: 12px;
-    box-shadow: 0 10px 24px rgba(28,52,123,0.08);
-    overflow: hidden;
-}
-.award-block::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg,#5a8dee,#6ad1ff,#ffb347);
-}
-/* Biography内の各要素ブロック枠 */
-/* 論文リストのカードデザイン */
-.paper-list {
-    display: block;
-    margin: 24px 0;
-    width: auto;
-    box-sizing: border-box;
-}
+/* ==========================================
+   Light Theme - Haru Terashima
+   ========================================== */
 
-.paper-card {
-    position: relative;
-    background: #fff;
-    border: 1px solid #e5e8ef;
-    border-left: 4px solid #5a8dee;
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(28,52,123,0.05);
-    padding: 12px 14px 10px;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    margin: 0 0 8px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3px;
-    line-height: 1.3;
-    transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
-}
-.paper-card:hover {
-    border-color: #d6deee;
-    border-left-color: #3f6fc4;
-    box-shadow: 0 12px 24px rgba(28,52,123,0.10);
-    transform: translateY(-1px);
-}
-.paper-authors {
-    font-size: 0.8em;
-    color: #555;
-    margin-bottom: 4px;
-    line-height: 1.35;
-}
-.paper-title {
-    font-weight: bold;
-    font-size: 1em;
-    margin-bottom: 6px;
-    color: #222;
-    line-height: 1.35;
-}
-.paper-meta {
-    font-size: 0.75em;
-    color: #666;
-    line-height: 1.1;
-}
-.paper-link-btn {
-    display: inline-block;
-    background: #444;
-    color: #fff;
-    font-weight: 500;
-    font-size: 0.85em;
-    padding: 2px 10px;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.16);
-    margin-top: 2px;
-    margin-right: 8px;
-    margin-bottom: 2px;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-}
-.paper-link-btn:hover {
-    background: #2b2b2b;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.22);
-    transform: translateY(-1px);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
 
-/* Grand Winner等の小ボタン */
-.paper-award-btn {
-    display: inline-block;
-    background: linear-gradient(90deg,#ffb347 0%,#ffcc80 100%);
-    color: #7a4c00;
-    font-weight: 500;
-    font-size: 0.85em;
-    padding: 2px 10px;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 1px 4px rgba(255,179,71,0.10);
-    margin-top: 2px;
-    margin-right: 8px;
-    margin-bottom: 2px;
-    transition: background 0.2s, box-shadow 0.2s;
-}
-.paper-award-btn:hover {
-    background: linear-gradient(90deg,#ffa500 0%,#ffd580 100%);
-    box-shadow: 0 2px 8px rgba(255,179,71,0.18);
-}
-/* セクション外枠デザイン */
-.section-block {
-    border: none;
-    border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    padding: 32px 24px;
-    margin: 32px 0;
-    background: #fff;
-    transition: box-shadow 0.3s;
-}
-.section-block:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-}
-body {
-    font-family: 'Verdana', sans-serif;
+/* ---- Reset & Variables ---- */
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
+}
+
+:root {
+    --bg:          #f4f7f6;
+    --surface:     #ffffff;
+    --surface2:    #f0f4f3;
+    --border:      #d5e0dd;
+    --border-lt:   #b0c8c3;
+    --accent:      #0d8c7c;
+    --accent-dim:  rgba(13, 140, 124, 0.09);
+    --accent2:     #16a34a;
+    --gold:        #a16207;
+    --gold-dim:    rgba(161, 98, 7, 0.09);
+    --text:        #1a2420;
+    --text2:       #4a5e59;
+    --text3:       #7a928d;
+    --r:           10px;
+    --r-sm:        6px;
+}
+
+/* ---- Base ---- */
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover { color: #065f52; }
+
+ul {
+    list-style: disc;
+    padding-left: 22px;
+}
+ul li { margin-bottom: 6px; }
+
+/* ---- Sticky Navigation ---- */
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+}
+
+.nav-name {
+    font-weight: 700;
+    font-size: 0.9em;
+    color: var(--text);
+    letter-spacing: -0.01em;
+}
+.nav-name span { color: var(--accent); }
+
+.nav-links {
+    display: flex;
+    gap: 2px;
+    list-style: none;
+    padding: 0;
+}
+.nav-links li { margin: 0; }
+.nav-links a {
+    display: block;
+    padding: 6px 14px;
+    border-radius: var(--r-sm);
+    font-size: 0.84em;
+    font-weight: 500;
+    color: var(--text2);
+    transition: color 0.2s, background 0.2s;
+}
+.nav-links a:hover {
+    color: var(--accent);
+    background: var(--accent-dim);
+}
+
+/* ---- Layout ---- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+}
+
+/* ---- Section Blocks ---- */
+.section-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 36px 32px;
+    margin: 24px 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+.section-block:hover {
+    border-color: var(--border-lt);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+/* ---- Headings ---- */
+h2 {
+    font-size: 1.55em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    color: var(--text);
+}
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 44px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--text2);
+    margin: 26px 0 12px;
+}
+
+h4 {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--text2);
+    margin: 14px 0 8px;
+}
+
+/* ---- About Me ---- */
+.aboutme-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 0 5px var(--accent-dim), 0 8px 24px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+/* ---- Bilingual About Me ---- */
+.aboutme-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lang-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.lang-label {
+    flex-shrink: 0;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: var(--accent-dim);
+    border: 1px solid var(--border-lt);
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-top: 3px;
+    line-height: 1.6;
+}
+
+.lang-block p {
+    font-size: 0.88em;
+    color: var(--text2);
+    line-height: 1.8;
+    margin: 0;
+    flex: 1;
+}
+
+.aboutme-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.scholar-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.82em;
+    font-weight: 600;
+    border: 1px solid var(--border-lt);
+    background: var(--surface2);
+    color: var(--text2);
+    margin: 12px 8px 0 0;
+    transition: all 0.2s;
+}
+.scholar-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-dim);
+}
+
+/* ---- Biography ---- */
+.bio-block {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--r);
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    background: var(--surface2);
+}
+
+.bio-block h3 {
+    color: var(--accent);
+    margin: 0 0 12px;
+}
+
+.bio-block h4 {
+    color: var(--text2);
+    margin: 14px 0 6px;
+}
+
+.bio-block ul {
+    list-style: none;
+    padding: 0;
+}
+.bio-block ul li {
+    font-size: 0.875em;
+    color: var(--text2);
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.55;
+    margin: 0;
+}
+.bio-block ul li:last-child { border-bottom: none; }
+
+.bio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+.bio-desc {
+    flex: 1;
+    min-width: 0;
+}
+.bio-date {
+    flex-shrink: 0;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    padding-top: 1px;
+}
+
+/* ---- Highlights ---- */
+.highlight-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.highlight-figure {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 14px;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+.highlight-figure::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+.highlight-figure:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(13, 140, 124, 0.12);
+}
+
+.highlight-figure img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    border-radius: var(--r-sm);
+    margin-bottom: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+.highlight-figure figcaption {
+    font-size: 0.78em;
+    color: var(--text2);
     line-height: 1.5;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-    border-bottom: 2px solid #ccc;
-    text-align: center;
-    position: relative;
-}
-
-.header-content {
+/* ---- Publications ---- */
+#publication h3 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+    gap: 10px;
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin: 28px 0 10px;
+    border: none;
+    padding: 0;
+}
+#publication h3::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
 }
 
-.header-text h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
-}
-
-.header-text h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
-    color: #777;
-}
-
-.header-text h4 {
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
-}
-
-.header-images {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    width: 30%;  /* 画像全体が画面幅に適応する */
-}
-
-.header-image {
-    width: 40%;  /* 画像が画面の幅に応じて自動的にリサイズされる */
-    height: auto;  /* 高さは自動調整 */
-    border-radius: 10px;
-    margin: 0 10px;
-}
-
-/* Awards内の各ブロック枠 */
-.award-block {
-    border: 2px solid #bbb;
-    border-radius: 12px;
-    background: #fff;
-    padding: 10px 16px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-/* Biography内の各要素ブロック枠 */
-.bio-block {
-    position: relative;
-    border: 1.5px solid #d9deea;
-    border-radius: 12px;
-    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
-    padding: 24px 20px 18px;
-    margin-bottom: 12px;
-    box-shadow: 0 12px 28px rgba(28,52,123,0.08);
-    overflow: hidden;
-}
-.bio-block::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg,#4f8cff,#6ad1ff,#ffb347);
-}
-/* 論文リストのカードデザイン */
 .paper-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 20px 0 28px;
-    width: auto;
-    box-sizing: border-box;
+    gap: 8px;
+    margin: 8px 0 0;
 }
 
 .paper-card {
-    position: relative;
-    background: #fff;
-    border: 1px solid #e5e8ef;
-    border-left: 4px solid #5a8dee;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(28,52,123,0.06);
-    padding: 10px 14px 9px;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3px;
-    line-height: 1.35;
-    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--r);
+    padding: 14px 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 .paper-card:hover {
-    border-left-color: #3f6fc4;
-    box-shadow: 0 8px 24px rgba(28,52,123,0.12);
-    transform: translateY(-2px);
+    border-color: var(--border-lt);
+    border-left-color: var(--accent);
+    box-shadow: 0 4px 16px rgba(13, 140, 124, 0.08);
+    transform: translateY(-1px);
 }
+
 .paper-title {
-    font-weight: 700;
-    font-size: 0.85em;
-    color: #1a2340;
-    line-height: 1.35;
-    margin-bottom: 1px;
+    font-size: 0.88em;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.45;
+    margin-bottom: 5px;
 }
+
 .paper-authors {
-    font-size: 0.78em;
-    color: #666;
-    line-height: 1.4;
-    margin-bottom: 4px;
+    font-size: 0.8em;
+    color: var(--text2);
+    line-height: 1.45;
+    margin-bottom: 9px;
 }
+
 .paper-meta {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 6px;
-    font-size: 0.78em;
-    color: #555;
-    margin-top: 2px;
 }
+
 .paper-conference {
     display: inline-flex;
     align-items: center;
-    background: #eef2fb;
-    color: #2c4a8a;
-    font-weight: 600;
-    font-size: 0.95em;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text2);
+    font-size: 0.78em;
+    font-weight: 500;
     padding: 3px 10px;
     border-radius: 20px;
-    letter-spacing: 0.01em;
-    border: 1px solid #d0d9f0;
 }
+
 .paper-link-btn {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    background: linear-gradient(135deg,#1a3a6e 0%,#1d6fa0 100%);
+    background: var(--text);
+    border: 1px solid var(--text);
     color: #fff;
+    font-size: 0.78em;
     font-weight: 600;
-    font-size: 0.82em;
     padding: 3px 12px;
     border-radius: 20px;
     text-decoration: none;
-    box-shadow: 0 2px 6px rgba(28,52,123,0.18);
-    letter-spacing: 0.02em;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    transition: all 0.2s;
 }
 .paper-link-btn:hover {
-    background: linear-gradient(135deg,#122d57 0%,#165d8a 100%);
-    box-shadow: 0 4px 12px rgba(28,52,123,0.28);
-    transform: translateY(-1px);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
 }
 
-/* Award badge button */
 .paper-award-btn {
     display: inline-flex;
     align-items: center;
-    gap: 3px;
-    background: linear-gradient(135deg,#f59e0b 0%,#fbbf24 100%);
-    color: #5c3600;
+    background: var(--gold-dim);
+    border: 1px solid rgba(161, 98, 7, 0.35);
+    color: var(--gold);
+    font-size: 0.78em;
     font-weight: 700;
-    font-size: 0.82em;
     padding: 3px 12px;
     border-radius: 20px;
     text-decoration: none;
-    box-shadow: 0 2px 6px rgba(245,158,11,0.22);
-    letter-spacing: 0.02em;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    transition: all 0.2s;
 }
 .paper-award-btn:hover {
-    background: linear-gradient(135deg,#d97706 0%,#f59e0b 100%);
-    box-shadow: 0 4px 12px rgba(245,158,11,0.32);
-    transform: translateY(-1px);
+    background: rgba(161, 98, 7, 0.16);
+    border-color: var(--gold);
+    color: var(--gold);
 }
 
-/* Publications section h3 styling */
-#publication h3 {
-    font-size: 1.1em;
-    font-weight: 700;
-    color: #2c4a8a;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    border-left: 3px solid #5a8dee;
-    padding-left: 10px;
-    margin: 24px 0 4px;
-}
-/* セクション外枠デザイン */
-.section-block {
-    border: none;
-    border-radius: 18px;
-    box-shadow: none;
-    padding: 32px 24px;
-    margin: 32px 0;
-    background: #fff;
-    transition: box-shadow 0.3s;
-}
-.section-block:hover {
-    box-shadow: none;
+/* ---- Awards ---- */
+.award-block {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--r);
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    background: var(--surface2);
 }
 
-body {
-    font-family: 'Verdana', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.5;
+.award-block h3 {
+    color: var(--gold);
+    margin: 0 0 12px;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-    border-bottom: 2px solid #ccc;
-    text-align: center;
-    position: relative;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
-}
-
-.header-text h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
-    color: #777;
-}
-
-.header-text h4 {
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
-}
-
-.header-images {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    width: 30%;  /* 画像全体が画面幅に適応する */
-}
-
-.header-image {
-    width: 40%;  /* 画像が画面の幅に応じて自動的にリサイズされる */
-    height: auto;  /* 高さは自動調整 */
-    border-radius: 10px;
-    margin: 0 10px;
-}
-
-.award-images, .memorial-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    justify-items: center;
-    align-items: center;
-    margin: 32px 0 24px 0;
-}
-
-.award-image, .memorial-image {
-    width: 100%;
-    max-width: 320px;
-    aspect-ratio: 4/3;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    border: 2px solid #eee;
-    background: #fff;
-    padding: 0;
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.award-image:hover, .memorial_image:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
-    transform: scale(1.04);
-    border-color: #bbb;
-}
-
-.paper-highlight {
-    color: black;
-}
-
-.award-highlight {
-    color: red;
-}
-
-
-
-/* スマホ・タブレット対応 */
-
-@media (max-width: 768px) {
-    .award-image, .memorial-image {
-        max-width: 140px;
-        min-width: 100px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .award-image, .memorial-image {
-        max-width: 100px;
-        min-width: 80px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 900px) {
-  .memorial-images, .award-images {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .memorial-images, .award-images {
-    grid-template-columns: 1fr;
-  }
-  .memorial-image, .award-image {
-    max-width: 96vw;
-    width: 100%;
-  }
-  .highlight-images {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-  .highlight-figure img {
-    max-width: 96vw;
-    width: 100%;
-  }
-}
-
-
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-nav ul {
+.award-block ul {
     list-style: none;
     padding: 0;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.container {
-    max-width: 1300px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-.content section {
-    margin-bottom: 40px;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #555;
-}
-
-.aboutme-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    padding: 6px;
-    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
-    border: 1px solid #dfe6f4;
-    box-shadow: 0 12px 24px rgba(28,52,123,0.12);
-    object-fit: cover;
-    margin-left: 20px;
-}
-
-/* スマホ・タブレット対応 */
-@media (max-width: 768px) {
-    .aboutme-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .profile-pic {
-        margin: 20px auto 0;
-    }
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 6px;
-}
-
-.scholar-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 7px 12px;
-    border-radius: 999px;
-    border: 1px solid #d8deea;
-    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
-    color: #1f2a44;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    box-shadow: 0 10px 22px rgba(28,52,123,0.12);
-    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s, color 0.2s;
-}
-.scholar-link:hover {
-    box-shadow: 0 14px 28px rgba(28,52,123,0.16);
-    border-color: #c6cfe0;
-    color: #183164;
-    transform: translateY(-1px);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-top: 2px solid #ccc;
-}
-
-footer p {
+.award-block ul li {
+    font-size: 0.875em;
+    color: var(--text2);
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.55;
     margin: 0;
-    font-size: 0.9em;
-    color: #777;
+}
+.award-block ul li:last-child { border-bottom: none; }
+.award-block strong { color: var(--gold); }
+
+/* ---- Certifications ---- */
+.award-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 8px;
 }
 
-.highlight-block {
-    padding: 8px 0 0;
-    margin: 32px 0;
-    background: none;
-    max-width: 1300px;
-    text-align: left;
-}
-.highlight-block h2 {
-    color: #333;
-    margin-bottom: 18px;
-}
-.highlight-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.highlight-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 14px 14px 12px;
-    border-radius: 14px;
-    border: 1.5px solid #dfe6f4;
-    background: linear-gradient(135deg,#ffffff 0%,#f7faff 100%);
-    box-shadow: 0 12px 28px rgba(28,52,123,0.08);
-    position: relative;
-    overflow: hidden;
-    min-width: 240px;
-    max-width: 320px;
-}
-.highlight-figure img {
-    display: block;
+.award-image {
     width: 100%;
-    max-width: 280px;
     aspect-ratio: 4/3;
     object-fit: contain;
-    border-radius: 10px;
-    border: 1.5px solid #e6ebf5;
-    box-shadow: 0 6px 16px rgba(28,52,123,0.10);
+    border-radius: var(--r);
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    padding: 4px;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
-.highlight-figure figcaption {
-    font-size: 0.92em;
-    color: #666;
-    margin-top: 8px;
+.award-image:hover {
+    border-color: var(--accent);
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* ---- Memorial Images ---- */
+.memorial-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.memorial-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: var(--r);
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    transition: border-color 0.2s, transform 0.2s;
+}
+.memorial-image:hover {
+    border-color: var(--accent);
+    transform: scale(1.02);
+}
+
+/* ---- Footer ---- */
+footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 24px;
     text-align: center;
+    background: var(--surface);
+}
+footer p {
+    font-size: 0.82em;
+    color: var(--text3);
+}
+footer a { color: var(--accent); }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .site-nav .nav-links { display: none; }
+
+    .section-block { padding: 24px 20px; }
+
+    .aboutme-content {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .highlight-images { grid-template-columns: repeat(2, 1fr); }
+    .award-images { grid-template-columns: repeat(2, 1fr); }
+    .memorial-images { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 16px 60px; }
+    h2 { font-size: 1.3em; }
+    .highlight-images { grid-template-columns: 1fr; }
+    .award-images { grid-template-columns: 1fr; }
+    .memorial-images { grid-template-columns: 1fr; }
 }

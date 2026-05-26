@@ -4,71 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haru Terashima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <span class="nav-name">Haru <span>Terashima</span></span>
+            <ul class="nav-links">
+                <li><a href="#main">About</a></li>
+                <li><a href="#publication">Publications</a></li>
+                <li><a href="#award">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <!-- Main Section -->
         <section id="main" class="content">
             <div class="section-block">
                 <h2>About Me</h2>
                 <div class="aboutme-content">
-                    <p>
-                        PhD student (D1) at Nagoya University, Japan.<br>
-                        Supervisor: Nobuo Kawaguchi and Takuro Yonezawa<br><br>
-
-                        Hello, I'm Haru Terashima (寺島青), Ph.D student at the Graduate School of Engineering at Nagoya University, Japan. I'm a member of Kawaguchi Laboratory (UCLab). I received my B.E and M.E degrees from Nagoya University in 2024 and 2026. My research interests include Urban Computing (Human Behavior Modeling, Human Mobility Prediction) and Machine Learning.<br>
-                        My hobbies are playing darts, solving a mystery, running, and traveling.<br>
-                        <a class="scholar-link" href="https://scholar.google.co.jp/citations?user=maPiVoYAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
-                        <a class="scholar-link" href="CV_HaruTerashima.pdf" target="_blank" rel="noopener">CV</a>
-                    </p>
+                    <div class="aboutme-text">
+                        <div class="lang-block">
+                            <span class="lang-label">EN</span>
+                            <p>Hello, I'm Haru Terashima (寺島青), a Ph.D. student (D1) at the Graduate School of Engineering, Nagoya University, Japan. I am a member of Kawaguchi Laboratory (UCLab), supervised by Prof. Nobuo Kawaguchi and Prof. Takuro Yonezawa. I received my B.E. from Nagoya University in 2024 and my M.E. in 2026. My research interests include Urban Computing (Urban Location Modeling, Human Behavior Modeling, Human Mobility Prediction) and Machine Learning. My hobbies are playing darts, solving mysteries, running, and traveling.</p>
+                        </div>
+                        <div class="lang-block">
+                            <span class="lang-label">JA</span>
+                            <p>はじめまして、寺島青（てらしま はる）です。名古屋大学大学院工学研究科 博士課程（D1）に在籍しており、河口信夫教授・米澤拓郎教授のご指導のもと、河口研究室（UCLab）で研究を行っています。2024年に名古屋大学工学部を卒業（学士）、2026年に同大学院を修了（修士）しました。研究分野はアーバンコンピューティング（都市空間モデリング・移動モデリング・人流予測）および機械学習です。趣味はダーツ・謎解き・ランニング・旅行です。</p>
+                        </div>
+                        <div class="aboutme-links">
+                            <a class="scholar-link" href="https://scholar.google.co.jp/citations?user=maPiVoYAAAAJ&hl=ja" target="_blank" rel="noopener">Google Scholar</a>
+                            <a class="scholar-link" href="CV_HaruTerashima.pdf" target="_blank" rel="noopener">CV</a>
+                        </div>
+                    </div>
                     <img src="prof.jpg" alt="Profile Picture" class="profile-pic">
                 </div>
                 <h2>Biography</h2>
                 <div class="bio-block">
                     <h3>Education</h3>
                     <ul>
-                        <li>Department of Information and Communication Engineering (Ph.D. Student)<br>Graduate School of Engineering, Nagoya University (2026.04 - now)</li>
-                        <li>Department of Information and Communication Engineering (Master of Engineering)<br>Graduate School of Engineering, Nagoya University (2024.04 - 2026.03)</li>
-                        <li>Department of Electrical, Electronics, and Information Engineering (Bachelor of Engineering)<br>School of Engineering, Nagoya University (2020.04 - 2024.03)</li>
-                        <li>Aichi Prefectual Meiwa High School (2017.04 - 2020.03)</li>
+                        <li><div class="bio-item"><span class="bio-desc">Department of Information and Communication Engineering (Ph.D. Student)<br>Graduate School of Engineering, Nagoya University</span><span class="bio-date">2026.04 –</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">Department of Information and Communication Engineering (Master of Engineering)<br>Graduate School of Engineering, Nagoya University</span><span class="bio-date">2024.04 – 2026.03</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">Department of Electrical, Electronics, and Information Engineering (Bachelor of Engineering)<br>School of Engineering, Nagoya University</span><span class="bio-date">2020.04 – 2024.03</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">Aichi Prefectual Meiwa High School</span><span class="bio-date">2017.04 – 2020.03</span></div></li>
                     </ul>
                 </div>
                 <div class="bio-block">
                     <h3>Experience</h3>
-                        <ul>
-                            <li>Graduate Program for Lifestyle Revolution based on Transdisciplinary Mobility Innovation (TMI WISE Program)<br>Institutes of Innovation for Future Society, Nagoya University (2024.05 - now)</li>
-                        </ul>
+                    <ul>
+                        <li><div class="bio-item"><span class="bio-desc">Graduate Program for Lifestyle Revolution based on Transdisciplinary Mobility Innovation (TMI WISE Program)<br>Institutes of Innovation for Future Society, Nagoya University</span><span class="bio-date">2024.05 –</span></div></li>
+                    </ul>
                 </div>
                 <div class="bio-block">
-                    <h3>Grants</h3>
-                        <ul>
-                            <li>Make New Standards Program for the Next Generation Researchers (JST SPRING), Nagoya University (2026.04 - now)</li>
-                        </ul>
-                </div>
-                <div class="bio-block">
-                    <h3>Projects</h3>
-                        <ul>
-                            <li>Research Member, <a href="https://internet-of-realities.org/amplatea/people.html" target="_blank" rel="noopener">JST RISTEX</a> (PI: Takuro Yonezawa) (2025.04 - now)</li>
-                            <li>Research Member, <a href="https://internet-of-realities.org/member/" target="_blank" rel="noopener">JST CREST IoR</a> (PI: Takuro Yonezawa) (2025.04 - now)</li>
-                        </ul>
+                    <h3>Fellowships</h3>
+                    <ul>
+                        <li><div class="bio-item"><span class="bio-desc">Make New Standards Program for the Next Generation Researchers (JST SPRING), Nagoya University</span><span class="bio-date">2026.04 –</span></div></li>
+                    </ul>
                 </div>
                 <div class="bio-block">
                     <h3>Activities</h3>
-                        <h4>Conference</h4>
-                            <ul>
-                                <li>ACM SIGSPATIAL 2025, Minneapolis, MN, USA (2025/11/3 - 2025/11/6)</li>
-                                <li>International Symposium on Spatial and Temporal Data (SSTD) 2025, Osaka, Japan (2025/8/25 - 2025/8/27)</li>
-                                <li>ACM SIGSPATIAL 2024, Atlanta, GA, USA (2024/10/29 - 2024/11/1)</li>
-                                <li>ACM MobiSys 2024, Tokyo, Japan (2024/6/3 - 2024/6/7)</li>
-                                <li>ACM SIGSPATIAL 2023, Hamburg, Germany (2023/11/13 - 2023/11/16)</li>
-                            </ul>
-                        <h4>Other</h4>
-                            <ul>
-                                <li>EDBT Summer School on AI & Data Management, Cyprus (2025/7/7 - 2025/7/11)</li>
-                                <li>Smart City Expo World Congress, Barcelona (2024/11/4 - 2024/11/6)</li>
-                                <li>Asian Student Symposium on Emerging Technologies (ASSET), Tokyo (2024/6/3 - 2024/6/7)</li>
-                            </ul>
+                    <h4>Conference</h4>
+                    <ul>
+                        <li><div class="bio-item"><span class="bio-desc">ACM SIGSPATIAL 2025, Minneapolis, MN, USA</span><span class="bio-date">2025.11</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">International Symposium on Spatial and Temporal Data (SSTD) 2025, Osaka, Japan</span><span class="bio-date">2025.08</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">ACM SIGSPATIAL 2024, Atlanta, GA, USA</span><span class="bio-date">2024.10</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">ACM MobiSys 2024, Tokyo, Japan</span><span class="bio-date">2024.06</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">ACM SIGSPATIAL 2023, Hamburg, Germany</span><span class="bio-date">2023.11</span></div></li>
+                    </ul>
+                    <h4>Other</h4>
+                    <ul>
+                        <li><div class="bio-item"><span class="bio-desc">EDBT Summer School on AI &amp; Data Management, Cyprus</span><span class="bio-date">2025.07</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">Smart City Expo World Congress, Barcelona</span><span class="bio-date">2024.11</span></div></li>
+                        <li><div class="bio-item"><span class="bio-desc">Asian Student Symposium on Emerging Technologies (ASSET), Tokyo</span><span class="bio-date">2024.06</span></div></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -141,7 +152,7 @@
                             <div class="paper-title">Multi-City Next Location Prediction through Mobility-Derived Multi-Pattern Transfer Learning</div>
                             <div class="paper-authors"><u><strong>Haru Terashima</strong></u>, Naoki Tamura, Kazuyuki Shoji, Kenta Urano, Takuro Yonezawa, Nobuo Kawaguchi</div>
                             <div class="paper-meta">
-                                <span class="paper-conference">ACM SIGSPATIAL GISCUP, 2025</span>
+                                <span class="paper-conference">ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems GISCUP, 2025</span>
                                 <a href="https://dl.acm.org/doi/10.1145/3748636.3771311" class="paper-link-btn" target="_blank">Paper</a>
                                 <a href="https://sigspatial2025.sigspatial.org/giscup/finalResults.html" class="paper-award-btn" target="_blank">3rd prize</a>
                             </div>
@@ -150,7 +161,7 @@
                             <div class="paper-title">Discovering Emerging Urban Hotspots Using Satellite Imagery and Human Mobility Data</div>
                             <div class="paper-authors">Nodira Tillayeva, <u><strong>Haru Terashima</strong></u>, Naoki Tamura, Kazuyuki Shoji, Tahera Hossain, Shin Katayama, Kenta Urano, Takuro Yonezawa, Nobuo Kawaguchi</div>
                             <div class="paper-meta">
-                                <span class="paper-conference">HCI International, 2025</span>
+                                <span class="paper-conference">International Conference on Human-Computer Interaction, 2025</span>
                                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-92980-9_7" class="paper-link-btn" target="_blank">Paper</a>
                             </div>
                         </div>
@@ -158,7 +169,7 @@
                             <div class="paper-title">Additive Compositionality in Urban Area Embeddings Based on Human Mobility Patterns</div>
                             <div class="paper-authors">Naoki Tamura, <u><strong>Haru Terashima</strong></u>, Kazuyuki Shoji, Shin Katayama, Kenta Urano, Takuro Yonezawa, Nobuo Kawaguchi</div>
                             <div class="paper-meta">
-                                <span class="paper-conference">ACM SIGSPATIAL, 2024</span>
+                                <span class="paper-conference">ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2024</span>
                                 <a href="https://dl.acm.org/doi/10.1145/3678717.3691279" class="paper-link-btn" target="_blank">Paper</a>
                             </div>
                         </div>
@@ -166,7 +177,7 @@
                             <div class="paper-title">Unveiling Human Attributes through Life Pattern Clustering using GPS Data Only</div>
                             <div class="paper-authors">Kazuyuki Shoji, <u><strong>Haru Terashima</strong></u>, Naoki Tamura, Shin Katayama, Kenta Urano, Takuro Yonezawa, Nobuo Kawaguchi</div>
                             <div class="paper-meta">
-                                <span class="paper-conference">ACM SIGSPATIAL, 2024</span>
+                                <span class="paper-conference">ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2024</span>
                                 <a href="https://dl.acm.org/doi/10.1145/3678717.3691309" class="paper-link-btn" target="_blank">Paper</a>
                             </div>
                         </div>
@@ -192,11 +203,19 @@
                 <h3>Domestic Conference</h3>
                     <div class="paper-list">
                         <div class="paper-card">
+                            <div class="paper-title">大規模人流データに基づくユーザ固有の移動文脈を考慮した都市空間モデリング</div>
+                            <div class="paper-authors"><u><strong>寺島青</strong></u>, 坪内孝太, 山口修司, 田村直樹, 庄子和之, 河口信夫,米澤拓郎</div>
+                            <div class="paper-meta">
+                                <span class="paper-conference">第119回 IPSJ SIG-MBL研究会, 2026</span>
+                                <!-- <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240605&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a> -->
+                            </div>
+                        </div>
+                        <div class="paper-card">
                             <div class="paper-title">共通潜在空間を介した多様な都市エリアデータのクロスモーダル変換手法</div>
                             <div class="paper-authors">田村直樹, <u><strong>寺島青</strong></u>, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫</div>
                             <div class="paper-meta">
                                 <span class="paper-conference">第84回 IPSJ SIG-UBI研究会, 2024</span>
-                                <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240605&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a>
+                                <!-- <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240605&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a> -->
                             </div>
                         </div>
                         <div class="paper-card">
@@ -204,7 +223,7 @@
                             <div class="paper-authors"><u><strong>寺島青</strong></u>, 髙木峻, 田村直樹, 庄子和之, Tahera Hossain, 片山晋, 浦野健太, 米澤拓郎, 河口信夫</div>
                             <div class="paper-meta">
                                 <span class="paper-conference">第84回 IPSJ SIG-UBI研究会, 2024</span>
-                                <a href="https://ipsj.ixsq.nii.ac.jp/records/240596" class="paper-link-btn" target="_blank">Paper</a>
+                                <!-- <a href="https://ipsj.ixsq.nii.ac.jp/records/240596" class="paper-link-btn" target="_blank">Paper</a> -->
                                 <a href="https://sigubi.ipsj.or.jp/excellent/" class="paper-award-btn" target="_blank">優秀論文賞</a>
                             </div>
                         </div>
@@ -213,7 +232,7 @@
                             <div class="paper-authors">庄子和之, <u><strong>寺島青</strong></u>, 田村直樹, 片山晋, 浦野健太, 米澤拓郎, 河口信夫</div>
                             <div class="paper-meta">
                                 <span class="paper-conference">第112回 IPSJ SIG-MBL研究会, 2024</span>
-                                <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=239525&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a>
+                                <!-- <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=239525&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a> -->
                                 <a href="https://mbl.ipsj.or.jp/recommend/2024/" class="paper-award-btn" target="_blank">優秀論文賞</a>
                             </div>
                         </div>
@@ -222,7 +241,7 @@
                             <div class="paper-authors"><u><strong>寺島青</strong></u>, 田村直樹, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫</div>
                             <div class="paper-meta">
                                 <span class="paper-conference">DICOMOシンポジウム, 2024</span>
-                                <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240329&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a>
+                                <!-- <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240329&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a> -->
                                 <a href="https://dicomo.org/commendation/" class="paper-award-btn" target="_blank">優秀プレゼンテーション賞</a>
                             </div>
                         </div>
@@ -231,7 +250,7 @@
                             <div class="paper-authors"><u><strong>寺島青</strong></u>, 田村直樹, 庄子和之, 片山晋, 浦野健太, 米澤拓郎, 河口信夫</div>
                             <div class="paper-meta">
                                 <span class="paper-conference">第111回 IPSJ SIG-MBL研究会, 2024</span>
-                                <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=233983&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a>
+                                <!-- <a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=233983&item_no=1&page_id=13&block_id=8" class="paper-link-btn" target="_blank">Paper</a> -->
                                 <a href="https://mbl.ipsj.or.jp/excellent/2024/" class="paper-award-btn" target="_blank">奨励発表賞</a>
                             </div>
                         </div>
