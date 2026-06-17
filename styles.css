@@ -12,19 +12,19 @@
 }
 
 :root {
-    --bg:          #f4f7f6;
+    --bg:          #f4f6f9;
     --surface:     #ffffff;
-    --surface2:    #f0f4f3;
-    --border:      #d5e0dd;
-    --border-lt:   #b0c8c3;
-    --accent:      #0d8c7c;
-    --accent-dim:  rgba(13, 140, 124, 0.09);
-    --accent2:     #16a34a;
-    --gold:        #a16207;
-    --gold-dim:    rgba(161, 98, 7, 0.09);
-    --text:        #1a2420;
-    --text2:       #4a5e59;
-    --text3:       #7a928d;
+    --surface2:    #f0f3f7;
+    --border:      #dde3ea;
+    --border-lt:   #b0bbc8;
+    --accent:      #3d5a80;
+    --accent-dim:  rgba(61, 90, 128, 0.10);
+    --accent2:     #4a6fa5;
+    --gold:        #b45309;
+    --gold-dim:    rgba(180, 83, 9, 0.09);
+    --text:        #0f172a;
+    --text2:       #3d506a;
+    --text3:       #7a8fa3;
     --r:           10px;
     --r-sm:        6px;
 }
@@ -44,7 +44,7 @@ a {
     text-decoration: none;
     transition: color 0.2s;
 }
-a:hover { color: #065f52; }
+a:hover { color: #2d4a6e; }
 
 ul {
     list-style: disc;
@@ -243,6 +243,24 @@ h4 {
     background: var(--accent-dim);
 }
 
+/* ---- Bio Tag ---- */
+.bio-tag {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 1px 0;
+    border-radius: 4px;
+    margin-right: 7px;
+    vertical-align: middle;
+    flex-shrink: 0;
+    width: 72px;
+    text-align: center;
+}
+.bio-tag--conf   { background: var(--accent-dim); color: var(--accent); border: 1px solid rgba(61,90,128,0.2); }
+.bio-tag--school { background: rgba(22,163,74,0.07); color: #166534; border: 1px solid rgba(22,163,74,0.2); }
+.bio-tag--other  { background: rgba(180,83,9,0.07); color: #92400e; border: 1px solid rgba(180,83,9,0.2); }
+
 /* ---- Biography ---- */
 .bio-block {
     border: 1px solid var(--border);
@@ -370,7 +388,7 @@ h4 {
 .paper-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
     margin: 8px 0 0;
 }
 
@@ -379,7 +397,7 @@ h4 {
     border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: var(--r);
-    padding: 14px 16px;
+    padding: 10px 14px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.04);
     transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
@@ -394,73 +412,48 @@ h4 {
     font-size: 0.88em;
     font-weight: 600;
     color: var(--text);
-    line-height: 1.45;
-    margin-bottom: 5px;
+    line-height: 1.4;
+    margin-bottom: 3px;
 }
 
 .paper-authors {
     font-size: 0.8em;
     color: var(--text2);
-    line-height: 1.45;
-    margin-bottom: 9px;
+    line-height: 1.4;
+    margin-bottom: 5px;
 }
 
 .paper-meta {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 0 4px;
+    font-size: 0.8em;
+    color: var(--text2);
 }
 
 .paper-conference {
-    display: inline-flex;
-    align-items: center;
-    background: var(--surface2);
-    border: 1px solid var(--border);
     color: var(--text2);
-    font-size: 0.78em;
-    font-weight: 500;
-    padding: 3px 10px;
-    border-radius: 20px;
+    font-style: italic;
 }
 
 .paper-link-btn {
-    display: inline-flex;
-    align-items: center;
-    background: var(--text);
-    border: 1px solid var(--text);
-    color: #fff;
-    font-size: 0.78em;
-    font-weight: 600;
-    padding: 3px 12px;
-    border-radius: 20px;
+    color: var(--accent);
+    font-weight: 500;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: color 0.2s;
 }
-.paper-link-btn:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-}
+.paper-link-btn::before { content: '·'; margin-right: 4px; color: var(--text3); font-weight: 400; }
+.paper-link-btn:hover { color: #2d4a6e; }
 
 .paper-award-btn {
-    display: inline-flex;
-    align-items: center;
-    background: var(--gold-dim);
-    border: 1px solid rgba(161, 98, 7, 0.35);
     color: var(--gold);
-    font-size: 0.78em;
-    font-weight: 700;
-    padding: 3px 12px;
-    border-radius: 20px;
+    font-weight: 600;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: color 0.2s;
 }
-.paper-award-btn:hover {
-    background: rgba(161, 98, 7, 0.16);
-    border-color: var(--gold);
-    color: var(--gold);
-}
+.paper-award-btn::before { content: '·'; margin-right: 4px; color: var(--text3); font-weight: 400; }
+.paper-award-btn:hover { color: #92400e; }
 
 /* ---- Awards ---- */
 .award-block {
