@@ -308,10 +308,22 @@ a:hover { color: #1e3a5f; }
 .pub-list { display: flex; flex-direction: column; }
 
 .pub-entry {
+    display: flex;
+    gap: 12px;
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
 }
 .pub-entry:last-child { border-bottom: none; }
+
+.pub-num {
+    flex: 0 0 auto;
+    min-width: 30px;
+    padding-top: 1px;
+    font-size: 0.78em;
+    font-weight: 700;
+    color: var(--text3);
+}
+.pub-body { flex: 1; min-width: 0; }
 
 .pub-title {
     font-size: 0.9em;
@@ -338,10 +350,10 @@ a:hover { color: #1e3a5f; }
 }
 .pub-venue a:hover { color: #1e3a5f; }
 .pub-award {
-    color: var(--gold) !important;
+    color: var(--accent) !important;
     font-weight: 600;
 }
-.pub-award:hover { color: #92400e !important; }
+.pub-award:hover { color: #1e3a5f !important; }
 .pub-doi {
     font-size: 0.75em;
     color: var(--text3);
